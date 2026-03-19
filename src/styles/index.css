@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium dark background with subtle motion hooks.
+   Motion itself is applied via Framer Motion in React. */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-black text-slate-100 antialiased;
+}
+
+/* Improve text rendering on Windows */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism helper */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
